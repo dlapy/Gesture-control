@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "main";
+}
+
+@font-face {
+    font-family: "main";
+    src: url(../fonts/main.ttf);
+}
+
+main{
+    background-size: cover;
+    height: 100vh;
+    background: -webkit-linear-gradient(56deg, #6640c6,#040107,#222361);/* Chrome 10-25, Safari 5.1-6 */                          
+    background: linear-gradient(56deg, #6640c6,#040107,#222361);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+@keyframes Up{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.title{
+    font-weight: 900;
+    font-size: 25px;
+    cursor: default;
+}
+
+.btn_reg{
+    background-color: #fe5c00;
+    width: 250px;
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 15px #fe5c00;
+    cursor: pointer;
+    margin-top: 30px;
+    animation-name: Up;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.btn_reg:hover{
+    transition: 0.5s all;
+    background-color: #b94807;
+}
+
+.web_camera{
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/icon.png);
+    background-size: cover;
+    animation-name: Up;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.main_window{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100vw;
+}
+
+.text{
+    max-width: 400px;
+}
+
+.main_title{
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.second_text{
+    margin-top: 10px;
+}
+
+.active_btn{
+    background-color: #cd0e00;
+    width: 160px;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 15px #fe0000;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.name_hands{
+    text-align: center;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image_hands{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left{
+    transition: 1s all;
+    margin-left: 0%;
+}
+
+.center{
+    transition: 1s all;
+    margin-left: -100%;
+}
+
+.right{
+    transition: 1s all;
+    margin-left: -200%;
+}
+
+.active{
+    transition: 0.5s all;
+    background-color: lightgreen;
+    box-shadow: 0px 0px 15px lightgreen;
+}

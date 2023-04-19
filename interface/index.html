@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/eel.js"></script>
+    <title>ControlEngine</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="title" onclick="center()">ControlEngine</div>
+        </header>
+        <div class="content center">
+            <div class="main_window second">
+                <div class="text">
+                    <div class="main_title">Автономный режим</div>
+                    <div class="second_text">Режим предназначенный для управления компьютером в режиме реального времени</div>
+                    <div class="active_btn act" onclick="activ_auto_btn();">Активировать</div>
+                </div>
+                <div class="hands">
+                    <div class="block_hands">
+                        <div class="image_hands" style="background-image: url(img/IMG_1396.jpg);"></div>
+                        <div class="name_hands">Двигать курсор</div>
+                    </div>
+                    <div class="block_hands">
+                        <div class="image_hands" style="background-image: url(img/IMG_1400.jpg);"></div>
+                        <div class="name_hands">Левая кнопка мыши</div>
+                    </div>
+                    <div class="block_hands">
+                        <div class="image_hands" style="background-image: url(img/IMG_1399.jpg);"></div>
+                        <div class="name_hands">Правая кнопка мыши</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_window first">
+                <div class="main_btn">
+                    <div class="btn_reg aut" onclick="left()">Автономный режим</div>
+                    <div class="btn_reg present" onclick="right()">Режим презентации</div>
+                </div>
+                <div class="web_camera">
+                    
+                </div>
+            </div>
+            <div class="main_window third">
+                <div class="text">
+                    <div class="main_title">Режим презентации</div>
+                    <div class="second_text">Режим предназначенный для управления презентациями</div>
+                    <div class="active_btn act2" onclick="activ_present_btn();">Активировать</div>
+                </div>
+                <div class="hands">
+                    <div class="block_hands">
+                        <div class="image_hands" style="background-image: url(img/IMG_1397.jpg);"></div>
+                        <div class="name_hands">Следующий слайд</div>
+                    </div>
+                    <div class="block_hands">
+                        <div class="image_hands" style="background-image: url(img/IMG_1398.jpg);"></div>
+                        <div class="name_hands">Предыдущий слайд</div>
+                    </div>
+                    <div class="block_hands">
+                        <div class="image_hands" style="background-image: url(img/IMG_1400.jpg);"></div>
+                        <div class="name_hands">Ок</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
